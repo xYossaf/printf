@@ -12,8 +12,6 @@ int _printf(const char *format, ...)
 	int printed_chars;
 	conver_t f_list[] = {
 		{"%", print_percent},
-		{"d", print_integer},
-		{"i", print_integer},
 		{"c", print_char},
 		{"s", print_string},
 		{NULL, NULL},
