@@ -1,27 +1,27 @@
 #include "main.h"
 
 /**
- * print_integer - Prints an integer
+ * p_int - Prints an integer
  * @list: list of arguments
  * Return: Will return the amount of characters printed.
  */
 
-int print_integer(va_list list)
+int p_int(va_list list)
 {
 	int num_length;
 
-	num_length = print_number(list);
+	num_length = p_num(list);
 	return (num_length);
 }
 
 
 /**
- * print_number - prints a number send to this function
+ * p_num - prints a number send to this function
  * @args: List of arguments
  * Return: The number of arguments printed
  */
 
-int print_number(va_list args)
+int p_num(va_list args)
 {
 	int n;
 	int div;

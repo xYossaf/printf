@@ -7,10 +7,10 @@
 #include <stdarg.h>
 
 /**
- * struct convert - defines a structure for symbols and functions
+ * struct convert - define structure
  *
- * @sym: The operator
- * @f: The function associated
+ * @sym: operator
+ * @f: function associated
  */
 
 struct convert
@@ -23,9 +23,9 @@ typedef struct convert conver_t;
 int _printf(const char *format, ...);
 int _putchar(char c);
 int handler(const char *format, conver_t f_list[], va_list arg_list);
-int print_percent(va_list);
-int print_integer(va_list);
-int print_char(va_list);
-int print_string(va_list);
-int print_number(va_list args);
+int p_per(va_list);
+int p_int(va_list);
+int p_cha(va_list);
+int p_str(va_list);
+int p_num(va_list args);
 #endif

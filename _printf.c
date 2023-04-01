@@ -1,21 +1,21 @@
 #include "main.h"
 
 /**
- * _printf - Receives the main string and all the necessary parameters to
+ * _printf - to
  * print a formated string
- * @format: A string containing all the desired characters
- * Return: A total count of the characters printed
+ * @format: A string
+ * Return: count of the characters printed
  */
 
 int _printf(const char *format, ...)
 {
 	int printed_chars;
 	conver_t f_list[] = {
-		{"%", print_percent},
-		{"d", print_integer},
-		{"i", print_integer},
-		{"c", print_char},
-		{"s", print_string},
+		{"%", p_per},
+		{"d", p_int},
+		{"i", p_int},
+		{"c", p_cha},
+		{"s", p_str},
 		{NULL, NULL},
 	};
 	va_list arg_list;

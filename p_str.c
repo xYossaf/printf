@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_string - Prints a string
+ * p_str - Prints a string
  * @list: list of arguments
  * Return: Will return the amount of characters printed.
  */
 
-int print_string(va_list list)
+int p_str(va_list list)
 {
 	int i;
 	char *str;
